@@ -17,9 +17,22 @@
             margin-left: 20px;
         }
         pre {
-            background-color: #f4f4f4;
+            background-color: #000000;  
+            color: #ffffff;  
             padding: 10px;
             border-radius: 5px;
+        }
+
+        .terminal {
+            background-color: #000000;  
+            border-radius: 5px; 
+            width: 600px; 
+        }
+        .prompt {
+            color: #00ff00; 
+        }
+        .output {
+            color: #ffffff; 
         }
     </style>
 </head>
@@ -63,5 +76,129 @@
         <li>Se o resultado é <strong>positivo</strong> ou <strong>negativo</strong>.</li>
         <li>Se o resultado é <strong>ímpar</strong> ou <strong>par</strong>.</li>
     </ul> 
+
+    <div class="terminal">
+        <pre>
+            <span class="prompt">user@machine:~$</span> <span class="output">Resultado da divisão: 5</span>
+            <span class="prompt">user@machine:~$</span> <span class="output">O resultado é positivo.</span>
+            <span class="prompt">user@machine:~$</span> <span class="output">O resultado é ímpar.</span> 
+        </pre>
+    </div>
+
+    <span style="display: none;">
+        <pre>
+            <code>  
+                // Exibe o menu de opções para o usuário
+                echo "Escolha uma operação:\n";
+                echo "1. Soma\n";
+                echo "2. Subtração\n";
+                echo "3. Multiplicação\n";
+                echo "4. Divisão\n"; 
+                $operacao = readline("Digite o número da operação (1-4): ");
+
+                // Solicita ao usuário os dois números 
+                $num1 = readline("Digite o primeiro número: "); 
+                $num2 = readline("Digite o segundo número: ");
+
+                // Realiza o cálculo conforme a operação escolhida
+                if ($operacao == 1) {
+                    $resultado = $num1 + $num2;
+                    echo "Resultado da soma: $resultado\n";
+                } elseif ($operacao == 2) {
+                    $resultado = $num1 - $num2;
+                    echo "Resultado da subtração: $resultado\n";
+                } elseif ($operacao == 3) {
+                    $resultado = $num1 * $num2;
+                    echo "Resultado da multiplicação: $resultado\n";
+                } elseif ($operacao == 4) {
+                    // Verifica se o segundo número é 0 para evitar divisão por zero
+                    if ($num2 == 0) {
+                        echo "Erro: Divisão por zero não é permitida.\n";
+                        exit;
+                    }
+                    $resultado = $num1 / $num2;
+                    echo "Resultado da divisão: $resultado\n";
+                } else {
+                    echo "Opção inválida. Por favor, escolha uma operação válida.\n";
+                    exit;
+                }
+
+                // Verifica se o resultado é positivo ou negativo
+                if ($resultado >= 0) {
+                    echo "O resultado é positivo.\n";
+                } else {
+                    echo "O resultado é negativo.\n";
+                }
+
+                // Verifica se o resultado é par ou ímpar
+                if ($resultado % 2 == 0) {
+                    echo "O resultado é par.\n";
+                } else {
+                    echo "O resultado é ímpar.\n";
+                } 
+
+            </code>
+        </pre>
+    </span>
+
+    <span style="display: none;">
+        <pre>
+            <code> 
+                // Exibe o menu de opções para o usuário
+                echo "Escolha uma operação:\n";
+                echo "1. Soma\n";
+                echo "2. Subtração\n";
+                echo "3. Multiplicação\n";
+                echo "4. Divisão\n"; 
+                $operacao = readline(Digite o número da operação (1-4): );
+
+                // Solicita ao usuário os dois números 
+                $num1 = readline("Digite o primeiro número: "); 
+                $num2 = readline("Digite o segundo número: ");
+
+                // Realiza o cálculo conforme a operação escolhida
+                switch ($operacao) {
+                    case 1:
+                        $resultado = $num1 + $num2;
+                        echo "Resultado da soma: $resultado\n";
+                        break;
+                    case 2:
+                        $resultado = $num1 - $num2;
+                        echo "Resultado da subtração: $resultado\n";
+                        break;
+                    case 3:
+                        $resultado = $num1 * $num2;
+                        echo "Resultado da multiplicação: $resultado\n";
+                        break;
+                    case 4:
+                        // Verifica se o segundo número é 0 para evitar divisão por zero
+                        if ($num2 == 0) {
+                            echo "Erro: Divisão por zero não é permitida.\n";
+                            exit;
+                        }
+                        $resultado = $num1 / $num2;
+                        echo "Resultado da divisão: $resultado\n";
+                        break;
+                    default:
+                        echo "Opção inválida. Por favor, escolha uma operação válida.\n";
+                        exit;
+                }
+
+                // Verifica se o resultado é positivo ou negativo
+                if ($resultado >= 0) {
+                    echo "O resultado é positivo.\n";
+                } else {
+                    echo "O resultado é negativo.\n";
+                }
+
+                // Verifica se o resultado é par ou ímpar
+                if ($resultado % 2 == 0) {
+                    echo "O resultado é par.\n";
+                } else {
+                    echo "O resultado é ímpar.\n";
+                }  
+            </code>
+        </pre>
+    </span>
 </body>
 </html>
