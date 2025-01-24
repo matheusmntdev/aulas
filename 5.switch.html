@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura switch em PHP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estrutura switch em PHP</h1>
+    <p>A estrutura <code>switch</code> permite realizar múltiplas comparações com uma variável de maneira mais organizada. Ao invés de usar vários <code>if-else</code>, o <code>switch</code> compara uma variável com diversos valores possíveis.</p>
+
+    <h2>Exemplo:</h2>
+    <pre><code>
+$dia = 2;
+
+switch ($dia) {
+    case 1:
+        echo "Domingo";
+        break;
+    case 2:
+        echo "Segunda-feira";
+        break;
+    case 3:
+        echo "Terça-feira";
+        break;
+    default:
+        echo "Dia inválido";
+} 
+    </code></pre>
+
+</body>
+</html>

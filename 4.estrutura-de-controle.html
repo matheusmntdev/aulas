@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Estruturas de Controle em PHP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de Estruturas de Controle em PHP</h1>
+    <p>Aprenda a utilizar as estruturas de controle <code>if</code>, <code>else</code> e <code>elseif</code> em PHP com os exemplos a seguir.</p>
+
+    <h2>1. Exemplo com <code>if</code></h2>
+    <p>O <code>if</code> é utilizado para verificar uma condição simples e, caso seja verdadeira, executar um bloco de código.</p>
+    <pre><code>
+
+$numero = 5;
+
+if ($numero > 0) {
+    echo "O número é positivo.";
+}
+
+    </code></pre>
+    <p><strong>Explicação:</strong> Este código verifica se a variável <code>$numero</code> é maior que 0 e, caso seja, imprime a mensagem "O número é positivo."</p>
+
+    <h2>2. Exemplo com <code>if</code> e <code>else</code></h2>
+    <p>O <code>else</code> é utilizado para fornecer um bloco de código alternativo, caso a condição do <code>if</code> seja falsa.</p>
+    <pre><code>
+
+$idade = 17;
+
+if ($idade >= 18) {
+    echo "Você pode votar!";
+} else {
+    echo "Você ainda não pode votar.";
+}
+
+    </code></pre>
+    <p><strong>Explicação:</strong> Este código verifica se a variável <code>$idade</code> é maior ou igual a 18. Caso seja, a mensagem "Você pode votar!" será exibida, caso contrário, a mensagem "Você ainda não pode votar." será mostrada.</p>
+
+    <h2>3. Exemplo com <code>if</code>, <code>else</code> e <code>elseif</code></h2>
+    <p>O <code>elseif</code> permite adicionar mais condições a serem verificadas, caso o <code>if</code> inicial não seja verdadeiro.</p>
+    <pre><code>
+
+$idade = 30;
+
+if ($idade < 12) {
+    echo "Você é uma criança.";
+} elseif ($idade >= 12 && $idade <= 17) {
+    echo "Você é um adolescente.";
+} else {
+    echo "Você é um adulto.";
+}
+
+    </code></pre>
+    <p><strong>Explicação:</strong> Neste código, a condição <code>$idade &lt; 12</code> verifica se a pessoa é uma "criança". Se a idade estiver entre 12 e 17 anos, o <code>elseif</code> verifica se é um "adolescente". Caso contrário, o <code>else</code> classifica a pessoa como "adulto".</p>
+
+    <h2>Explicação Adicional</h2>
+    <ul>
+        <li><strong><code>if</code>:</strong> Usado para verificar uma única condição.</li>
+        <li><strong><code>else</code>:</strong> Usado para fornecer uma alternativa quando a condição do <code>if</code> é falsa.</li>
+        <li><strong><code>elseif</code>:</strong> Permite adicionar condições adicionais a serem verificadas se a condição do <code>if</code> for falsa.</li>
+    </ul>
+    <p>Essas estruturas são fundamentais para tomar decisões no seu código PHP, permitindo controlar o fluxo de execução de maneira eficiente.</p>
+
+    <h1>Operador Ternário em PHP</h1>
+    <p>O operador ternário é uma forma compacta de escrever uma expressão <code>if-else</code> em PHP. Sua sintaxe é a seguinte:</p>
+    <pre><code>
+(condição) ? valor_se_verdadeiro : valor_se_falso;
+    </code></pre>
+
+    <h2>Exemplo:</h2>
+    <pre><code>
+ 
+$idade = 20;
+echo ($idade >= 18) ? "Você é maior de idade" : "Você é menor de idade";
+ 
+    </code></pre>
+
+</body>
+</html>
