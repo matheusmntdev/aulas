@@ -1,0 +1,36 @@
+Lista de Exercícios de Algoritmos
+
+1 – Somar dois números e multiplicar o resultado pelo primeiro número.
+Escreva um algoritmo que leia dois números, calcule a soma e depois multiplique o resultado pela variável que contém o primeiro número.
+
+2 – Média de três números.
+Escreva um algoritmo que leia três números nas variáveis Val1, Val2 e Val3, calcule sua média na variável media e exiba para o usuário o resultado.
+
+3 – Calcular 15% de um valor.
+Escreva um algoritmo que receba um valor e calcule 15% deste valor, exibindo o resultado para o usuário.
+
+4 – Calcular 5% e 50% de um valor.
+Escreva um algoritmo que receba um valor, calcule e mostre para o usuário 5% e 50% deste valor.
+
+5 – Somar os quadrados de dois números.
+Escreva um algoritmo que leia dois números, calcule o quadrado de cada um, some os quadrados e mostre o resultado.
+
+6 – Converter a velocidade de m/s para km/h.
+Escreva um algoritmo que leia a velocidade de um objeto em metros por segundo (m/s), calcule e exiba para o usuário a velocidade em quilômetros por hora (km/h).
+
+7 – Calcular o IMC (Índice de Massa Corporal).
+Escreva um algoritmo que leia a altura e o peso de uma pessoa, calcule o seu IMC e exiba o resultado para o usuário.
+
+8 – Calcular o desconto de 7% em um produto.
+Escreva um algoritmo que receba o valor de um produto, calcule um desconto de 7%, e exiba para o usuário o valor original, o valor do desconto e o valor com o desconto.
+
+9 – Calcular o volume de uma caixa retangular.
+Escreva um algoritmo que calcule e apresente o volume de uma caixa retangular utilizando a fórmula: volume = comprimento x largura x altura.
+
+10 – Parcelar uma compra com 16% de acréscimo.
+Escreva um algoritmo que receba o valor de um produto, acrescente 16% a esse valor, divida em 10 parcelas e mostre para o usuário o valor da parcela e o valor total da compra.
+
+Desafio – Calculadora Simples:
+Crie uma calculadora simples no terminal que permita ao usuário escolher uma operação (soma, subtração, multiplicação ou divisão) e, em seguida, insira dois números para realizar a operação escolhida. Depois de calcular o resultado, verifique e exiba:
+  - Se o resultado é positivo ou negativo.
+  - Se o resultado é ímpar ou par.
