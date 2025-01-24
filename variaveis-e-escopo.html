@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variáveis, Constantes e Escopo no PHP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+
+    h1,
+    h2 {
+      color: #2c3e50;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    code {
+      background-color: #f4f4f4;
+      padding: 0 5px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Variáveis, Constantes e Escopo no PHP</h1>
+
+  <h2>1. Variáveis no PHP</h2>
+  <p>Variáveis no PHP são espaços de armazenamento usados para guardar dados temporários. Elas podem armazenar
+    diferentes tipos de valores, como números, strings, arrays, objetos, etc. A principal característica das variáveis é
+    que seu valor pode ser alterado durante a execução do programa.</p>
+
+  <h3>Declaração de variáveis:</h3>
+  <ul>
+    <li>Variáveis começam com o símbolo <code>$</code>, seguido pelo nome da variável.</li>
+    <li>As variáveis podem ser alteradas a qualquer momento.</li>
+  </ul>
+
+  <h3>Exemplo:</h3>
+  <pre><code> 
+      $nome = "João";   // Variável do tipo string
+      $idade = 25;      // Variável do tipo inteiro
+      $altura = 1.75;   // Variável do tipo float
+
+      echo "Nome: $nome, Idade: $idade, Altura: $altura";  // Exibe as variáveis 
+    </code></pre>
+
+  <h2>2. Constantes no PHP</h2>
+  <p>Constantes são valores que não podem ser alterados durante a execução do programa. Ao contrário das variáveis, uma
+    vez que uma constante é definida, ela mantém seu valor fixo e não pode ser modificada.</p>
+
+  <h3>Declaração de constantes:</h3>
+  <ul>
+    <li>As constantes são declaradas usando a função <code>define()</code> ou a palavra-chave <code>const</code>.</li>
+    <li>O valor de uma constante não pode ser alterado após sua definição.</li>
+  </ul>
+
+  <h3>Exemplo com <code>define()</code>:</h3>
+  <pre><code>
+ 
+      define("PI", 3.14159);
+      echo PI;  // Exibe o valor de PI
+ 
+    </code></pre>
+
+  <h3>Exemplo com <code>const</code>:</h3>
+  <pre><code>
+ 
+const TAXA_JURO = 0.05;
+echo TAXA_JURO;  // Exibe o valor de TAXA_JURO
+ 
+    </code></pre>
+
+  <h2>3. Escopo das Variáveis e Constantes</h2>
+  <p>O escopo se refere à área do código onde uma variável ou constante pode ser acessada. Em PHP, existem diferentes
+    tipos de escopo:</p>
+
+  <h3>Escopo Global</h3>
+  <p>Variáveis e constantes definidas fora de funções podem ser acessadas de qualquer parte do código.</p>
+
+  <h3>Escopo Local</h3>
+  <p>Variáveis definidas dentro de funções só podem ser acessadas dentro dessa função.</p>
+
+  <h3>Exemplo de Escopo:</h3>
+  <pre><code>
+$x = 10; // Variável global
+
+function testeEscopo() {
+    global $x; // Acessando a variável global dentro da função
+    echo $x;   // Exibe 10
+}
+
+testeEscopo();
+echo $x; // Exibe 10, já que $x é global
+
+    </code></pre>
+
+  <h3>Exemplo de Variável Local:</h3>
+  <pre><code>
+function exemploLocal() {
+    $y = 20; // Variável local
+    echo $y;  // Exibe 20
+}
+
+exemploLocal();
+echo $y; // Gera erro, pois $y é local e não pode ser acessada fora da função
+
+    </code></pre>
+
+</body>
+
+</html>

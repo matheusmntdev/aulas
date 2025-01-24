@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem de Precedência dos Operadores no PHP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 0 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ordem de Precedência dos Operadores no PHP</h1>
+    <p>Este documento descreve a ordem de precedência dos operadores no PHP, categorizados em <strong>Aritméticos</strong>, <strong>Relacionais</strong> e <strong>Lógicos</strong>, além dos operadores de <strong>Atribuição</strong>.</p>
+
+    <h2>1. Aritméticos (Operadores de Matemática)</h2>
+    <ul>
+        <li><code>()</code>: Parênteses (usados para agrupar expressões)</li>
+        <li><code>++</code> e <code>--</code>: Incremento e decremento (pré ou pós)</li>
+        <li><code>*</code>, <code>/</code>, <code>%</code>: Multiplicação, divisão e módulo</li>
+        <li><code>+</code>, <code>-</code>: Adição e subtração</li>
+    </ul>
+
+    <h2>2. Relacionais (Comparação de Valores)</h2>
+    <ul>
+        <li><code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>: Menor que, menor ou igual, maior que, maior ou igual</li>
+        <li><code>==</code>, <code>!=</code>, <code>&lt;&gt;</code>: Igualdade e desigualdade</li>
+        <li><code>===</code>, <code>!==</code>: Identidade (igualdade de valor e tipo)</li>
+    </ul>
+
+    <h2>3. Lógicos</h2>
+    <ul>
+        <li><code>!</code>: Negação (inversão do valor booleano)</li>
+        <li><code>&amp;&amp;</code>: E lógico (AND)</li>
+        <li><code>||</code>: OU lógico (OR)</li> 
+    </ul>
+
+    <h2>4. Atribuição (Operadores de Atribuição)</h2>
+    <ul>
+        <li><code>=</code>: Atribuição simples</li>
+        <li><code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code>: Atribuições compostas (como <code>x += 5</code>, que é equivalente a <code>x = x + 5</code>)</li>
+    </ul>
+
+    <h2>Ordem de Precedência (do maior para o menor):</h2>
+    <ol>
+        <li><code>()</code> Parênteses</li>
+        <li><code>++</code>, <code>--</code> (pré-incremento e pré-decremento)</li>
+        <li><code>*</code>, <code>/</code>, <code>%</code> (Multiplicação, Divisão, Módulo)</li>
+        <li><code>+</code>, <code>-</code> (Soma, Subtração)</li>
+        <li><code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code></li>
+        <li><code>===</code>, <code>!==</code> (Identidade e Não Identidade)</li>
+        <li><code>!</code> (Negação)</li>
+        <li><code>&amp;&amp;</code> (E lógico)</li>
+        <li><code>||</code> (OU lógico)</li>
+        <li><code>=</code>, <code>+=</code>, <code>-+</code>, <code>*=</code>, <code>/=</code>, <code>%=</code> (Atribuição)</li> 
+    </ol>
+
+    <h2>Observações:</h2>
+    <ul>
+        <li><code>()</code> têm a maior precedência e podem ser usados para forçar a avaliação de expressões antes de outras operações.</li>
+        <li><code>++</code> e <code>--</code> têm maior precedência que qualquer operação aritmética.</li>
+        <li>Atribuição tem a menor precedência, ou seja, é avaliada por último na maioria das expressões.</li> 
+    </ul>
+</body>
+</html>
