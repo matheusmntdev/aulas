@@ -1,0 +1,28 @@
+1. Crie um script que receba um número e exiba a tabuada desse número de 1 a 10 utilizando duas versões diferentes (for e while)
+
+2. Faça um programa que leia 5 números e informe o maior número.
+
+3. Escreva um algoritmo que receba dois números representando os limites de um intervalo e exiba a quantidade de números pares entre eles (inclusive os limites).
+
+4. Escreva um algoritmo que receba dois números representando os limites de um intervalo e calcule a soma de todos os números ímpares dentro desse intervalo.
+
+5. Escreva um algoritmo que permita ao usuário inserir vários números (até digitar 0 para parar). Calcule e exiba a média dos números digitados.
+
+6. Escreva um algoritmo que gere um número aleatório entre 1 e 100 e permita ao usuário tentar adivinhar o número. O programa deve informar se o palpite é maior ou menor que o número secreto, até que o usuário acerte.
+	6.1 $numeroAleatorio = rand(1, 100);
+
+7. Peça ao usuário um número inteiro e calcule o seu fatorial. Exemplo: 5! = 5 × 4 × 3 × 2 × 1 = 120
+
+8. Crie um programa que exiba um menu de opções, permitindo que o usuário escolha uma ação até que ele opte por sair.
+
+	Menu de Opções:
+    		1 - Exibir 'Olá, Mundo!'
+    		2 - Exibir a data atual
+    		3 - Calcular a soma de dois números
+    		4 - Sair
+
+	Escolha uma opção (1-4):
+
+	8.1 $data_atual = date('d/m/Y');
+
+9. Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.

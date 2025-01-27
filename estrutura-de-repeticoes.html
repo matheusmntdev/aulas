@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estruturas de Repetição em PHP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h1,
+    h2 {
+      color: #333;
+    }
+
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    code {
+      font-family: "Courier New", Courier, monospace;
+      color: #c7254e;
+      background-color: #f9f2f4;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Estruturas de Repetição em PHP</h1>
+  <p>As estruturas de repetição permitem executar um bloco de código várias vezes com base em uma condição. São úteis
+    para automatizar tarefas repetitivas e manipular conjuntos de dados.</p>
+
+  <h2>1. Estrutura <code>for</code></h2>
+  <p>A estrutura <code>for</code> é usada quando sabemos exatamente quantas vezes o loop será executado.</p>
+  <pre>
+<code>// Sintaxe:
+for (inicialização; condição; incremento) {
+    // Código a ser executado
+}</code>
+    </pre>
+  <p><strong>Exemplo:</strong></p>
+  <pre>
+<code>&lt;?php
+// Exibe números de 1 a 5
+for ($i = 1; $i <= 5; $i++) {
+    echo "Número: $i;" . PHP_EOL;
+}
+?&gt;</code>
+    </pre>
+
+  <h2>2. Estrutura <code>while</code></h2>
+  <p>O <code>while</code> é usado quando não sabemos o número exato de iterações, mas temos uma condição a ser avaliada
+    antes de cada execução.</p>
+  <pre>
+<code>// Sintaxe:
+while (condição) {
+    // Código a ser executado
+}</code>
+    </pre>
+  <p><strong>Exemplo:</strong></p>
+  <pre>
+<code>&lt;?php
+// Exibe números de 1 a 5
+$i = 1;
+while ($i <= 5) {
+    echo "Número: $i;" . PHP_EOL;
+    $i++;
+}
+?&gt;</code>
+    </pre>
+
+  <h2>3. Estrutura <code>do-while</code></h2>
+  <p>A estrutura <code>do-while</code> garante que o bloco de código seja executado pelo menos uma vez,
+    independentemente da condição.</p>
+  <pre>
+<code>// Sintaxe:
+do {
+    // Código a ser executado
+} while (condição);</code>
+    </pre>
+  <p><strong>Exemplo:</strong></p>
+  <pre>
+<code>&lt;?php
+// Exibe números de 1 a 5
+$i = 1;
+do {
+    echo "Número: $i;" . PHP_EOL;
+    $i++;
+} while ($i <= 5);
+?&gt;</code>
+    </pre>
+
+  <h2>Controle de Loops</h2>
+  <p>PHP permite controlar a execução de loops com as palavras-chave <code>break</code> e <code>continue</code>.</p>
+
+  <h3>1. Uso de <code>break</code></h3>
+  <p>O <code>break</code> interrompe a execução do loop imediatamente.</p>
+  <pre>
+<code>&lt;?php
+// Para o loop ao encontrar o número 3
+for ($i = 1; $i <= 5; $i++) {
+    if ($i == 3) {
+        break;
+    }
+    echo "Número: $i;" . PHP_EOL;
+}
+?&gt;</code>
+    </pre>
+
+  <h3>2. Uso de <code>continue</code></h3>
+  <p>O <code>continue</code> interrompe a iteração atual e passa para a próxima.</p>
+  <pre>
+<code>&lt;?php
+// Pula o número 3
+for ($i = 1; $i <= 5; $i++) {
+    if ($i == 3) {
+        continue;
+    }
+    echo "Número: $i;" . PHP_EOL;
+}
+?&gt;</code>
+    </pre>
+</body>
+
+</html>
